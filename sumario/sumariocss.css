@@ -1,12 +1,103 @@
-*{
-    background-color: white;
+* {
+    box-sizing: border-box;
+    /*outline: 1px solid red*/
 }
 
-#botaoteste{
-    border-radius: 50px;
-    width: 700px;
-    height: 350px;
-    font-size: 25px;
-    background-color: green;
+img, video, iframe, table{
+    max-width: 100%;
+    height: auto;
+}
+
+.cabecalho{
+    background-color: black;
+    width: 100%;
+    height: 150px;
     color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cabec a{
+    font-size: 170%;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#cabec{
+    margin: 10px;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+#titulodosite{
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 320%;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+body{
+    margin: 0;
+    padding: 0
+}
+
+#cruzc{
+    width: 6%;
+    z-index: 1;
+    position: absolute;
+    margin-left: 75%;
+}
+
+#cruzc2{
+    width: 6%;
+    z-index: 1;
+    position: absolute;
+    margin-left: -75%;
+}
+
+#guadalupe{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+#guadalupe img{
+    width: 50%;
+    margin-top: -2%;
+}
+
+h1{
+    text-align:left;
+    margin-left: 10%;
+    font-size: 400%;
+}
+
+#sub{
+    margin-top: -2%;
+    font-size: 200%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+#umul{
+    position: absolute;
+    margin-top: -62%;
+    margin-left: 10%;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+}
+
+li{
+    margin-bottom: 10%;
+
 }

@@ -7,11 +7,32 @@
     <link rel="stylesheet" href="sumariocss.css">
 </head>
 <body>
+    <div id="header"></div>
+
+    <script>
+        fetch('../cabecalho.html')
+        .then(res => res.text())
+        .then(html =>document.getElementById('header').innerHTML = html)
+        .catch(err => console.error('Erro ao carregar cabeçalho:', err));
+    </script>
+
     <h1>Sumário</h1>
-    <ul>
-        <li>um</li>
-        <li>dois</li>
-        <li>tres</li>
-    </ul>
+    <p id="sub">Escolha um dos titúlos de Maria para descobrir sua história.</p>
+    <hr style="width: 80%; height: 1.5px; background-color: black; border: none; margin-left: 10%;">
+
+<div id="guadalupe">
+    <img src="guadalupe.png" alt="guadalupe">
+</div>
+
+<ul id="umul">
+    <li><a class="links" href="https://www.youtube.com" target="_blank">Nossa Senhora de Guadalupe</a></li>
+    <li><a class="links" href="https://www.youtube.com" target="_blank">Nossa Senhora Aparecida</a></li>
+    <li><a class="links" href="https://www.youtube.com" target="_blank">Nossa Senhora das Lagrimas</a></li>
+    <li><a class="links" href="https://www.youtube.com" target="_blank">Nossa Senhora de Fátima</a></li>
+    <li><a class="links" href="https://www.youtube.com" target="_blank">Nossa Senhora de Lourdes</a></li>
+    <li><a class="links" href="https://www.youtube.com" target="_blank">Nossa Senhora de Nazaré</a></li>
+</ul>
+
+
 </body>
 </html>

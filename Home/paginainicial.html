@@ -9,20 +9,19 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <p id="titulodosite">Títulos Marianos</p>
-        <hr style="width: 50%;" >
-        <nav id="cabec">
-            <a href="/sumario/sumario.html" target="_blank">Sumário</a>
-            <a href="https://pt.wallpapers.com/maria-e-jesus" target="_blank">Papeis de Parede</a>
-            <a href="https://nossasenhoravotuporanga.com.br/ns.php" target="_blank">Orações</a>
-            <a href="https://pinterest.com" target="_blank">Testemunhos</a>
-        </nav>
+    <div id="header"></div>
 
-            <img id="cruzc" src="cruz.png" alt="">
-            <img id="cruzc2" src="cruz.png" alt=""> 
-            
-    </header> 
+    <script>
+        fetch('../cabecalho.html')
+        .then(res => res.text())
+        .then(html =>document.getElementById('header').innerHTML = html)
+        .catch(err => console.error('Erro ao carregar cabeçalho:', err));
+    </script>
+
+    <div id="texto">
+        <p>O objetivo deste site é, além de me ajudar em meu estudo de programação, também catalogar os titúlos pertencentes à Nossa Senhora, mãe de Deus. Desde já, que Deus vos abençoe!</p>
+    </div>
+
     <img id="banner1" src="bannermaria.jpg" alt="">
 
 </body>
