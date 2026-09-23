@@ -93,6 +93,7 @@ h1{
 }
 
 #fonte a{
+    font-style: italic;
     display: block;
     width: fit-content;
     margin: 0 auto;
