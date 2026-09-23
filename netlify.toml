@@ -1,0 +1,16 @@
+# Static HTML site: there is no Node.js tooling and no package.json,
+# so there is nothing to build. These values override the Netlify UI
+# build settings (which were pointing at `npm run build` / `public`).
+[build]
+  command = "echo 'Static site - no build step required'"
+  publish = "."
+
+# The repo has no root index.html; the home page lives at
+# Home/paginainicial.html. Send the site root there.
+# A 302 (not a 200 rewrite) is used on purpose so the browser lands on the
+# real path and the page's relative asset URLs (css1.css, bannermaria.jpg,
+# ../cabecalho.html) still resolve.
+[[redirects]]
+  from = "/"
+  to = "/Home/paginainicial.html"
+  status = 302
