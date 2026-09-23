@@ -91,3 +91,12 @@ h1{
         width: 70%;
     }
 }
+
+#fonte a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
