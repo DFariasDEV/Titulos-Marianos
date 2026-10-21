@@ -9,7 +9,7 @@ img, video, iframe, table{
 }
 
 .cabecalho{
-    position: static;
+    position: relative;
     background-color: black;
     width: 100%;
     height: 150px;
@@ -48,19 +48,18 @@ body{
     padding: 0
 }
 
-#cruzc{
+#cruzc, #cruzc2{
     width: 6%;
+    min-width: 30px;
     z-index: 1;
     position: absolute;
-    margin-left: 75%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
 }
 
-#cruzc2{
-    width: 6%;
-    z-index: 1;
-    position: absolute;
-    margin-left: -75%;
-}
+#cruzc{ right: 3%; }
+#cruzc2{ left: 3%; }
 
 #guadalupe{
     display: flex;
@@ -103,6 +102,10 @@ li{
 
 }
 
+#opcoescabec{
+    display: none;
+}
+
 @media (max-width: 768px) {
     #guadalupe {
         display: none;
@@ -113,10 +116,7 @@ li{
         margin-top: 8%;}
 
     #cabec {
-        width: 90%; 
-        display: flex;
-        flex-wrap: wrap;       
-        justify-content: center;
+        display: none;
     }
 
     #cabec a {
@@ -124,4 +124,26 @@ li{
      
     }
 
+    #titulodosite{
+        font-size: 210%;
+        margin-top: -1%;
+        margin-right: 5%;
+        
+    }
+
+    #opcoescabec{
+        display: flex;
+        margin-top: 1%;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 30%;
+    }
+
+        
+    #cruzc, #cruzc2{
+        width: 15%;
+    }
+}
 }
