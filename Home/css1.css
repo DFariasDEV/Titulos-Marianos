@@ -136,15 +136,15 @@ body{
     }
 
     #texto{
-        padding: 40%;
+        width: 80%;
+        height: auto;
     }
-
 
     #texto p{
-        position: absolute;
-        font-size: 190%;
-        padding: 20%;
+        text-align: center;
+        overflow-wrap: break-word;
+        padding: 10%;
+        margin: 0;
     }
-
 
 }
