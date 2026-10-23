@@ -101,3 +101,45 @@ h1{
     font-weight: bold;
     color: black;
 }
+
+#opcoescabec{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #umul{
+        position:static;
+        margin-top: 8%;}
+
+    #cabec {
+        display: none;
+    }
+
+    #cabec a {
+        font-size: 150%;
+     
+    }
+
+    #titulodosite{
+        font-size: 210%;
+        margin-top: -1%;
+        margin-right: 5%;
+        
+    }
+
+    #opcoescabec{
+        display: flex;
+        margin-top: 1%;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 30%;
+    }
+
+        
+    #cruzc, #cruzc2{
+        width: 15%;
+    }
+}
